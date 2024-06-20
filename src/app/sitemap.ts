@@ -1,6 +1,6 @@
 import { getSideNavData } from "@/lib/utils";
 import { MetadataRoute } from "next";
-export const fallbackUrl = "www.a1associates.ai";
+export const fallbackUrl = "https://a1associates.ai";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const industryEntries =
     getSideNavData("industries")?.map((entry) => ({
