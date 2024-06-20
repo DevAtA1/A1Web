@@ -7,7 +7,7 @@ import { cva } from "class-variance-authority";
 import { Metadata } from "next";
 import Link from "next/link";
 const sideLinkStyle = cva(
-  "p-0 justify-start items-start hover:scale-105 font-semibold transition duration-300 ease-in-out text-md h-10"
+  "p-0 justify-start items-start hover:scale-105 transition duration-300 ease-in-out text-md font-light h-10"
 );
 const sideLinkActiveStyle = cva(
   "p-0 justify-start items-start hover:scale-105 font-semibold transition duration-300 ease-in-out text-xl h-10"
