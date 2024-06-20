@@ -26,7 +26,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${process.env.NEXT_PUBLIC_BASE_URL ?? fallbackUrl}/#contact`,
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL ?? fallbackUrl}/employeecentral`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL ?? fallbackUrl}/employeeCentral`,
     },
     {
       url: `${process.env.NEXT_PUBLIC_BASE_URL ?? fallbackUrl}/`,
