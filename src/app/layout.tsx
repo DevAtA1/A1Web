@@ -15,7 +15,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "A1 Associates",
+  title: {
+    default: "A1 Associates",
+    template: "%s | A1 Associates",
+  },
   description: "CRAFTING SOLUTIONS,BUILDING FUTURES",
 };
 

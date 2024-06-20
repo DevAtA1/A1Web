@@ -4,14 +4,23 @@ import { Button } from "@/components/ui/button";
 import { getSideNavData, getSideNavDropdownData } from "@/lib/utils";
 import { TSubSection } from "@/types";
 import { cva } from "class-variance-authority";
+import { Metadata } from "next";
 import Link from "next/link";
 const sideLinkStyle = cva(
-  "p-0 justify-start items-start hover:scale-105 font-semibold transition duration-300 ease-in-out text-md font-light h-10"
+  "p-0 justify-start items-start hover:scale-105 font-semibold transition duration-300 ease-in-out text-md h-10"
 );
 const sideLinkActiveStyle = cva(
   "p-0 justify-start items-start hover:scale-105 font-semibold transition duration-300 ease-in-out text-xl h-10"
 );
-
+export async function generateMetadata({
+  params,
+}: {
+  params: { serviceName: string };
+}): Promise<Metadata> {
+  return {
+    title: servicesData[params.serviceName]?.[0].title,
+  };
+}
 export default function Services({
   params,
 }: {

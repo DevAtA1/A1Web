@@ -1,6 +1,11 @@
 import { aboutUsData } from "@/CONSTANTS";
 import Divider from "@/components/Divider";
 import { Separator } from "@/components/ui/separator";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About us",
+};
 
 export default function About() {
   return (
