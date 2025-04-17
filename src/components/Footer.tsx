@@ -2,6 +2,8 @@ import { blurBase64 } from "@/CONSTANTS";
 import { Separator } from "@/components/ui/separator";
 import Image from "next/image";
 const Footer = () => {
+const currentYear = new Date().getFullYear();
+const copyrightText = `Copyright © ${currentYear}, A1 Associates LLC. All Rights Reserved.`;
   return (
     <div className="w-full">
       <Separator></Separator>
@@ -16,7 +18,7 @@ const Footer = () => {
           blurDataURL={blurBase64}
         ></Image>
         <p className="text-center text-sm">
-          Copyright © 2024, A1 Associates LLC. All Rights Reserved.
+          {copyrightText}
         </p>
       </div>
     </div>
