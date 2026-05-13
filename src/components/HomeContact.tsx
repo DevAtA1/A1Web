@@ -18,9 +18,9 @@ const HomeContact = () => {
       </div>
       <div className="flex-col flex lg:flex-row justify-between gap-2 mt-5">
         <div>
-          <div className="flex items-center text-sm lg:text-lg gap-2">
-            <IoLocationOutline />
-            {contactData.location}
+          <div className="flex items-start text-sm lg:text-lg gap-2">
+            <IoLocationOutline className="mt-1 shrink-0" />
+            <span className="whitespace-pre-line">{contactData.location}</span>
           </div>
           {contactData.phoneNumbers.map((number: string) => {
             return (
