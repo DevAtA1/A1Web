@@ -898,7 +898,7 @@ export const aboutUsData = {
   ],
 };
 export const contactData = {
-  location: "A1 Associates LLC, 100 Wood Ave S, Suite 110, Iselin, NJ 08830",
+  location: "A1 Associates LLC \n100 Wood Ave S, Suite 110, Iselin, NJ 08830",
   phoneNumbers: ["(732) 554-1599"],
   email: "info@a1associates.net",
 };
