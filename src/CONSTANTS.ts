@@ -898,7 +898,7 @@ export const aboutUsData = {
   ],
 };
 export const contactData = {
-  location: "1309 Charleston Dr, Monroe, NJ 08831",
+  location: "A1 Associates LLC, 100 Wood Ave S, Suite 110, Iselin, NJ 08830",
   phoneNumbers: ["(732) 554-1599"],
   email: "info@a1associates.net",
 };
